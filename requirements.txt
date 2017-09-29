@@ -1,0 +1,17 @@
+dj-database-url
+dj-static
+Django
+django-bootstrap3
+flake8
+gunicorn
+mccabe
+psycopg2
+pycodestyle
+pyflakes
+pytz
+static3
+pytest
+django-taggit
+Markdown
+django-haystack
+pysolr
