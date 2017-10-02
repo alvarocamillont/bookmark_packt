@@ -125,3 +125,29 @@ STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = reverse_lazy('dashboard')
 LOGIN_URL = reverse_lazy('login')
 LOGOUT_URL = reverse_lazy('logout')
+
+#EMAIL_BACKEND = ''
+#EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_HOST_USER = 'my_account@gmail.com'
+#EMAIL_HOST_PASSWORD = ''
+#EMAIL_PORT = 587
+#EMAIL_USE_TLS = True
+
+# python-social-auth settings
+AUTHENTICATION_BACKENDS = (
+    'social.backends.facebook.Facebook2OAuth2',
+    'social.backends.google.GoogleOAuth2',
+    'social.backends.twitter.TwitterOAuth',
+
+    'django.contrib.auth.backends.ModelBackend',
+    'account.authentication.EmailAuthBackend',
+)
+
+SOCIAL_AUTH_FACEBOOK_KEY = ''
+SOCIAL_AUTH_FACEBOOK_SECRET = ''
+
+SOCIAL_AUTH_TWITTER_KEY = ''
+SOCIAL_AUTH_TWITTER_SECRET = ''
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = ''
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = ''
