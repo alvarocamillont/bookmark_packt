@@ -1,12 +1,13 @@
 from django.conf.urls import url
 from django.contrib.auth import views
-from .views import dashboard, register
+from .views import dashboard, register, edit
 
 
 urlpatterns = [
     # url(r'^login/$', views.user_login, name='login'),
     url(r'^$', dashboard, name='dashboard'),
     url(r'^register/$', register, name='register'),
+    url(r'^edit/$', edit, name='edit'),
 
     # login / logout urls
     url(r'^login/$', views.login, name='login'),
