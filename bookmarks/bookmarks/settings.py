@@ -134,6 +134,8 @@ LOGOUT_URL = reverse_lazy('logout')
 #EMAIL_USE_TLS = True
 
 # python-social-auth settings
+
+'''
 AUTHENTICATION_BACKENDS = (
     'social.backends.facebook.Facebook2OAuth2',
     'social.backends.google.GoogleOAuth2',
@@ -151,3 +153,5 @@ SOCIAL_AUTH_TWITTER_SECRET = ''
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = ''
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = ''
+
+'''
