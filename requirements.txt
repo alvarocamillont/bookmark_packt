@@ -16,3 +16,5 @@ Markdown
 django-haystack
 pysolr
 pillow
+python-social-auth
+social-auth-app-django

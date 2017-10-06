@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'account',
     'django.contrib.admin',
+    'social.apps.django_app.default',
 ]
 
 MIDDLEWARE = [
@@ -140,9 +141,9 @@ LOGOUT_URL = reverse_lazy('logout')
 
 
 AUTHENTICATION_BACKENDS = (
-    #'social.backends.facebook.Facebook2OAuth2',
-    #'social.backends.google.GoogleOAuth2',
-    #'social.backends.twitter.TwitterOAuth',
+    'social.backends.facebook.Facebook2OAuth2',
+    'social.backends.google.GoogleOAuth2',
+    'social.backends.twitter.TwitterOAuth',
     'account.authentication.EmailAuthBackend',
     'django.contrib.auth.backends.ModelBackend',
 
