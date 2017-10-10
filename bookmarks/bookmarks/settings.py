@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ')4jsmnr4b^zcdegleo*y+6mx!dxemfdwe4sx53%_a7^!+(+pv&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = TEMPLATE_DEBUG = True 
 
 ALLOWED_HOSTS = []
 
@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    
+    'sorl.thumbnail',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
