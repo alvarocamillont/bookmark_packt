@@ -6,6 +6,7 @@ from django.contrib.auth.decorators import login_required
 from .models import Profile
 from django.contrib import messages
 
+
 def user_login(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
