@@ -60,7 +60,7 @@ def image_like(request):
             pass
     return JsonResponse({'status':'ko'})
 
-'''
+
 @login_required
 def image_list(request):
     images = Image.objects.all()
@@ -84,4 +84,3 @@ def image_list(request):
     return render(request,
                   'images/image/list.html',
                    {'section': 'images', 'images': images})
-'''
