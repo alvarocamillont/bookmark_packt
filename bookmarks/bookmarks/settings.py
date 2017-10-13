@@ -131,6 +131,10 @@ LOGIN_REDIRECT_URL = reverse_lazy('dashboard')
 LOGIN_URL = reverse_lazy('login')
 LOGOUT_URL = reverse_lazy('logout')
 
+ABSOLUTE_URL_OVERRIDES = {
+    'auth.user': lambda u: reverse_lazy('user_detail', args=[u.username])
+}
+
 #EMAIL_BACKEND = ''
 #EMAIL_HOST = 'smtp.gmail.com'
 #EMAIL_HOST_USER = 'my_account@gmail.com'
